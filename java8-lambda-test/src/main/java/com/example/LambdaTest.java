@@ -1,4 +1,4 @@
-package com.example.lambdatest;
+package com.example;
 
 import java.util.Arrays;
 import java.util.Comparator;

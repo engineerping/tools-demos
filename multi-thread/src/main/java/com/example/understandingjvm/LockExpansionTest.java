@@ -1,4 +1,4 @@
-package org.understandingjvm;
+package com.example.understandingjvm;
 
 import org.openjdk.jol.info.ClassLayout;
 
