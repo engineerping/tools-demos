@@ -1,6 +1,6 @@
 package com.example.synchronizedtest;
 
-import com.example.IntGenerator;
+import com.example.volatileuseage.IntGenerator;
 
 public class SynchronizedEventGenerator extends IntGenerator {
     private int currentEventValue = 0;
