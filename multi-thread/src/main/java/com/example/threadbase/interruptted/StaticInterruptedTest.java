@@ -3,8 +3,11 @@ package com.example.threadbase.interruptted;
 import com.example.SleepHelper;
 
 /**
- * NOTICE: The File encoding is UTF-8 when been created
- *
+ /**
+ *###############################################################################
+ *TIPS: Character set of current file is "UTF-8",just in case of Chinese characters displays in garbled
+ *###############################################################################
+ * @author: gcsp.
  * ##优雅地停止一个线程，要用死循环##
  * <p>
  * interrupt() 方法用于将线程的断标志位的值设置为true,线程每运行一步，都会主动去检查这个中断标志位的值。

@@ -4,14 +4,14 @@ import com.example.SleepHelper;
 
 import static java.lang.Thread.sleep;
 
-/**
- * NOTICE: The File encoding is UTF-8 when been created
+ /**
+ * <p>TIPS: Character set of current file is "UTF-8",just in case of Chinese characters displays in garbled</p>
+ * 描述:
  *
- * ##优雅地停止一个线程，要用死循环##
+ * 优雅地停止一个线程，要用死循环
  *
  * interrupt() 方法用于将线程的断标志位的值设置为true,线程每运行一步，都会主动去检查这个中断标志位的值。
  * isInterrupted() 方法用于读取线程的中断标志位的值,然后程序员根据自己的需要写自己的逻辑。
- * 另外，
  * static interrupted 用于读取线程的中断标志位的值，并将其设置为默认值false（重置）。
  */
 public class InterruptForSet_IsInterruptedForReadTest {
@@ -22,7 +22,7 @@ public class InterruptForSet_IsInterruptedForReadTest {
                     System.out.println("用Thread.currentThread().isInterrupted() 读取线程中断标志位,其值为: ");
                     System.out.println(Thread.currentThread().isInterrupted());
                     System.out.println("进入这个if 块的唯一作用就是结束死循环，从而结束当前线程的...所以接下来就break");
-                    break; //3.如果线程中断标志位被设置为了true，则break出整个循环。
+                    break; //3.如果线程中断标志位被设置为了true，则break出整个循环，run方法直接结束，线程安全停止。
                 }
 
                 //Do something...
