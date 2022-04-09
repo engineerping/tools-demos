@@ -6,10 +6,10 @@ import lombok.Data;
  * <p>TIPS: Character set of current file is "UTF-8",just in case of Chinese characters displays in garbled</p>
  * 描述:
  */
-//@Data
+
 public class Student {
-    public String name;
-    public Teacher teacher;
+    private String name;
+    private Teacher teacher;
 
     public Student() {
     }
@@ -34,7 +34,7 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "name='" + name + '\'' +
-                ", teacher=" + teacher +
+                ", teacher‘s hashcode=" + teacher.hashCode() +
                 '}';
     }
 }

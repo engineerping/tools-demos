@@ -7,8 +7,8 @@ import lombok.Data;
  * 描述:
  */
 public class Teacher {
-    public String name;
-    public Student student;
+    private String name;
+    private Student student;
 
     public Teacher() {
 
@@ -34,7 +34,7 @@ public class Teacher {
     public String toString() {
         return "Teacher{" +
                 "name='" + name + '\'' +
-                ", student=" + student +
+                ", student‘s hashcode=" + student.hashCode() +
                 '}';
     }
 }

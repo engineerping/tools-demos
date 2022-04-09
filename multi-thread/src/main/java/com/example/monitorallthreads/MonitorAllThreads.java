@@ -1,5 +1,6 @@
 package com.example.monitorallthreads;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,10 +12,10 @@ import java.util.stream.Stream;
  */
 public class MonitorAllThreads {
     public static void main(String[] args) {
-
+        getCurrentThreadInfo();
     }
 
-    private Map<String, List<String>> getCurrentThreadInfo() {
+    private static Map<String, List<String>> getCurrentThreadInfo() {
         final Map<String, List<String>>  resultMap = new HashMap<>();
         final Map<Thread, StackTraceElement[]> allStackTraces = Thread.getAllStackTraces();
 
@@ -22,8 +23,20 @@ public class MonitorAllThreads {
             final StringBuilder stringBuilder = new StringBuilder();
             stringBuilder.append("thread name=").append(k.getName());
 
-            //Stream.of(v).filter(stackTrace1 -> stackTrace1.getClassName().startsWith());
+//            Stream.of(v).filter(stackTrace1 -> stackTrace1.getClassName().startsWith("com")).limit(5)
+            Stream.of(v).limit(5)
+                    .forEach(stackTrace -> stringBuilder
+                            .append(", class=").append(stackTrace.getClassName())
+                            .append("::").append(stackTrace.getMethodName())
+                            .append(", line").append(stackTrace.getLineNumber())
+                    );
+
+            if (resultMap.containsKey(k.getState().name())) {
+                resultMap.put(k.getState().name(), new ArrayList<>());
+                resultMap.get(k.getState().name()).add(stringBuilder.toString());
+            }
         });
+        System.out.println(resultMap.toString());
         return resultMap;
     }
 
