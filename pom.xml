@@ -18,6 +18,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <spring-boot-maven-plugin>2.6.4</spring-boot-maven-plugin>
     </properties>
     <dependencies>
         <dependency>
@@ -67,7 +68,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.6.4</version>
+                <version>${spring-boot-maven-plugin}</version>
                 <configuration>
                     <excludes>
                         <exclude>

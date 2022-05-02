@@ -1,4 +1,4 @@
-package com.example.circulardependencyproblem.manually;
+package com.example.circulardependencyproblem.bymanual;
 
 /**
  * <p>TIPS: Character set of current file is "UTF-8",just in case of Chinese characters displays in garbled</p>

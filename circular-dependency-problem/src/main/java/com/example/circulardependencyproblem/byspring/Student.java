@@ -1,14 +1,18 @@
-package com.example.circulardependencyproblem.manually;
+package com.example.circulardependencyproblem.byspring;
 
-import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>TIPS: Character set of current file is "UTF-8",just in case of Chinese characters displays in garbled</p>
  * 描述:
  */
-
+@Component
 public class Student {
-    private String name;
+
+    private String name = "s2";
+
+    @Autowired
     private Teacher teacher;
 
     public Student() {
