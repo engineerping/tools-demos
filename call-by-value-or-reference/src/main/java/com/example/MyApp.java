@@ -6,17 +6,17 @@ import java.util.*;
  *结论: Java的传参本质上是值传递,
  *      对于引用类型而言,传递的值为引用类型变量的内存地址.
  */
-public class App {
+public class MyApp {
     public static void main( String[] args ) {
         int i = 1000;
         Integer inValue = 2000;
         Integer inValue2 = 3000;
 
         //singleValue
-        App app = new App();
-        app.tripleValue(i);
+        MyApp myApp = new MyApp();
+        myApp.tripleValue(i);
         System.out.println(i);
-        app.tripleValue(inValue);
+        myApp.tripleValue(inValue);
         System.out.println(inValue);
 
         //HashSet
@@ -24,15 +24,15 @@ public class App {
         integerSet.add(i);
         integerSet.add(inValue);
         integerSet.add(inValue2);
-        app.tripleValues(integerSet);
-        System.out.println(app.tripleValues(integerSet));
+        myApp.tripleValues(integerSet);
+        System.out.println(myApp.tripleValues(integerSet));
 
         //ArrayList
         List<Integer> integerList = new ArrayList<>();
         integerList.add(0, i);
         integerList.add(1, inValue);
         integerList.add(2, inValue2);
-        app.tripleReferenceValues(integerList);
+        myApp.tripleReferenceValues(integerList);
         System.out.println(integerList);
 
         Person person = new Person();

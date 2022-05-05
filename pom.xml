@@ -51,10 +51,12 @@
     </dependencies>
 
     <modules>
-        <module>annotation-test</module>
-        <module>any-test</module>
+        <module>basic-annotation-test</module>
+        <module>any-test-spring</module>
         <module>call-by-value-or-reference</module>
+        <module>circular-dependency-problem</module>
         <module>class-loader</module>
+        <module>collections-test</module>
         <module>exception-test</module>
         <module>interface-field</module>
         <module>java8-lambda-test</module>
@@ -63,6 +65,7 @@
         <module>multi-thread</module>
         <module>proxy-test</module>
         <module>RestControllerAdvice-ExceptionHandler</module>
+        <module>any-test-basic</module>
 
     </modules>
     <build>
