@@ -55,9 +55,9 @@
         <module>any-test-spring</module>
         <module>call-by-value-or-reference</module>
         <module>circular-dependency-problem</module>
-        <module>class-loader</module>
+        <module>basic-class-loader</module>
         <module>collections-test</module>
-        <module>exception-test</module>
+        <module>basic-exception-test</module>
         <module>interface-field</module>
         <module>java8-lambda-test</module>
         <module>java8-util-stream-test</module>
