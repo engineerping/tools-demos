@@ -80,7 +80,8 @@ public class SerializableDemo {
     // 2.使用最初正确的 serialVersionUID = 1123456777L
     // 2.(为了保证语法正确)在Person 类的 toString () 方法中删去 age 字段的 信息，
     // 3.依旧使用现存的 文件 basic-serializable-test/person.out,
-    // 注意 ！！！====>执行 deserializeTest 方法，！！！成功了！！！，Person{name='小明', address='上海', email='null'}
+    // 注意能成功 ！！！====>执行 deserializeTest 方法，！！！成功了！！！，Person{name='小明', address='上海', email='null'}
     //
+    // 因此结论是：只要 serialVersionUID 不变化，则在进行反序列化是就能成功，只是被改动的字段的值会为 null 罢了。
     //------------------------------------------------------------------------------------------------
 }
