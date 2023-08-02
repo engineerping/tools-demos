@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.example</groupId>
-  <artifactId>basic-serializable-test</artifactId>
+  <artifactId>interview-questions</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
-  <name>basic-serializable-test</name>
+  <name>interview-questions</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
