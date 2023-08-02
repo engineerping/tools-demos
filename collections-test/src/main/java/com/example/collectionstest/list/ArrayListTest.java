@@ -1,4 +1,4 @@
-package com.example.collectionstest.localtest.list;
+package com.example.collectionstest.list;
 
 import java.util.ArrayList;
 import java.util.List;

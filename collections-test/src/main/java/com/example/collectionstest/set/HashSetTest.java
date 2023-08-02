@@ -1,4 +1,4 @@
-package com.example.collectionstest.localtest.set;
+package com.example.collectionstest.set;
 
 import java.util.HashSet;
 import java.util.Set;
