@@ -13,7 +13,7 @@ public class SerializableDemo {
     }
 
 //    public void serializeTest() throws Exception{
-//        File file = new File("person.out"); //会在src 同目录下生成person.out文件
+//        File file = new File("./basic-serializable-test/person1.out"); //会在src 同目录下生成person.out文件
 //        //序列化
 //        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(file));
 //        Person person = new Person("小明",18, "上海");
@@ -23,7 +23,7 @@ public class SerializableDemo {
 //    }
 
     public void deserializeTest() throws Exception{
-        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("person.out"));
+        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("./basic-serializable-test/person.out"));
         Object newPerson = objectInputStream.readObject();
         objectInputStream.close();
 

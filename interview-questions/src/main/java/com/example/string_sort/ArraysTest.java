@@ -1,8 +1,7 @@
-package com.example;
+package com.example.string_sort;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * 给定 String "ABCDBBCDCDD"
