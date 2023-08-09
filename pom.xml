@@ -12,7 +12,7 @@
     <artifactId>demos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>the parent of project demos</name>
+
     <description>Demo project for Spring Boot</description>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -53,19 +53,19 @@
     <modules>
         <module>any-test-basic</module>
         <module>any-test-spring</module>
-        <module>call-by-value-or-reference</module>
+        <module>basic-call-by-value-or-reference</module>
         <module>basic-annotation-test</module>
-        <module>circular-dependency-problem</module>
+        <module>spring-circular-dependency-problem</module>
         <module>basic-class-loader</module>
-        <module>collections-test</module>
+        <module>basic-collections-test</module>
         <module>basic-exception-test</module>
-        <module>interface-field</module>
-        <module>java8-lambda-test</module>
-        <module>java8-util-stream-test</module>
-        <module>java-io-stream-test</module>
-        <module>multi-thread</module>
-        <module>proxy-test</module>
-        <module>RestControllerAdvice-ExceptionHandler</module>
+        <module>basic-interface-field</module>
+        <module>basic-java8-lambda-test</module>
+        <module>basic-java8-util-stream-test</module>
+        <module>basic-java-io-stream-test</module>
+        <module>basic-multi-thread</module>
+        <module>spring-jdk-cglib-proxy-test</module>
+        <module>spring-RestControllerAdvice</module>
         <module>basic-serializable-test</module>
         <module>interview-questions</module>
         <module>basic-http-server-demo</module>

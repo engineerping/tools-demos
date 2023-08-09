@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>basic-annotation-test</artifactId>
+    <artifactId>basic-java8-lambda-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
 

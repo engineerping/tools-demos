@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>any-test-spring</artifactId>
+    <artifactId>spring-circular-dependency-problem</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <description>Demo project for Spring Boot</description>
@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
         <dependency>

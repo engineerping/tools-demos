@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>basic-annotation-test</artifactId>
+    <artifactId>basic-java-io-stream-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
 
@@ -22,6 +22,13 @@
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-project-info-reports-plugin</artifactId>
+            <version>3.0.0</version>
+            <type>maven-plugin</type>
         </dependency>
     </dependencies>
 
