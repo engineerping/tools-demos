@@ -69,6 +69,7 @@
         <module>basic-serializable-test</module>
         <module>interview-questions</module>
         <module>basic-http-server-demo</module>
+        <module>basic-self-learning-exam</module>
 
     </modules>
     <build>
