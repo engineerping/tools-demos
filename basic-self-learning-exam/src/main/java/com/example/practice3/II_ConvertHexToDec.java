@@ -30,8 +30,8 @@ public class II_ConvertHexToDec {
         System.out.println("输入的十六进制数是 " + arg.toUpperCase() + ", 转换成的十进制数是 " + int10);
     }
     public static void main(String[] args) {
-        if (args.length == 0) {
-            System.out.println("请从键盘输入一个十六进制数");
+        if (args.length != 1) {
+            System.out.println("请从命令行传入一个十六进制数作为参数");
             return;
         }
         String str = args[0].toUpperCase();

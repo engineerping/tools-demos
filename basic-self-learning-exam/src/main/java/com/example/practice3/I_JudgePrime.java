@@ -26,7 +26,17 @@ public class I_JudgePrime {
      * @param args
      */
     public static void main(String[] args) {
-        int n = Integer.parseInt(args[0]);
+        if (args.length != 1) {
+            System.out.println("请从命令行传入一个正整数作为参数:");
+            return;
+        }
+        int n = 0;
+        try {
+            n = Integer.parseInt(args[0]);
+        } catch (NumberFormatException e) {
+            System.out.println("输入参数不合法, JVM 退出");
+            return;
+        }
         if (isPrime(n)) {
             System.out.println(n + " is prime number");
         } else {
