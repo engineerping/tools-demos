@@ -64,7 +64,6 @@ public class III_ChickensRabbitsInOneCage {
         int chicken = 0;
         int rabbit = 0;
 
-
         rabbit = (foot - 2 * head) / 2 ;
         chicken = head - rabbit;
 
