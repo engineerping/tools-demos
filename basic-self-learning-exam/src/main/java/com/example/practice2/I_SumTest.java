@@ -35,12 +35,7 @@ public class I_SumTest {
         while (scanner.hasNextLine()) { //判断键盘是否有输入enter 键盘
             inputStr = scanner.nextLine(); //读取键盘输入的一行
             int[] intArray = null;
-            try {
-                intArray = parseStringToIntArray(inputStr);
-            } catch (Exception e) {
-                System.out.println(e.getMessage() + "JVM 退出");
-                System.exit(0);
-            }
+            intArray = parseStringToIntArray(inputStr);
 
             //业务代码 start
             int summary = sumDuplicatingNumber(intArray[0], intArray[1]);
@@ -49,7 +44,7 @@ public class I_SumTest {
             } else if (summary > 0 && summary <= 1000000){
                 System.out.println("!!!总和小于 1,000,000, 不输出");
             } else {
-                new RuntimeException("请检查错误");
+                throw new RuntimeException("请检查错误");
             }
             //业务代码 end
 
@@ -76,7 +71,8 @@ public class I_SumTest {
         //当 a 取最大值 9时, n 如果取 9，则累加和为1,111,111,101, 小于Integer.MAX_VALUE(2,147,483,647),故 n 取值应不大于 9
         if( coupleIntValues[0] > 9 || coupleIntValues[0] < 1
                 || coupleIntValues[1] > 9 || coupleIntValues[1] < 1) {
-            throw new RuntimeException("您输入的值已超过本程序可计算范围...");
+            System.out.println(("您输入的值已超过本程序可计算范围...JVM 退出"));
+            System.exit(0);
         }
         return coupleIntValues;
     }
