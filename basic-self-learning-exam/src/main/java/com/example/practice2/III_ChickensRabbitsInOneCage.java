@@ -22,7 +22,7 @@ public class III_ChickensRabbitsInOneCage {
     }
 
     public static void scanCoupleIntFromKeyboard() {
-        System.out.println("请在键盘上输入两个整数, 用英文逗号隔开:");
+        System.out.println("请在键盘上输入两个整数, 用英文逗号隔开~~:");
         Scanner scanner = new Scanner(System.in);
         String inputStr = "0 , 0";
         while(scanner.hasNextLine()) {
@@ -31,7 +31,7 @@ public class III_ChickensRabbitsInOneCage {
             ////business start
             chickensRabbitsInOneCage(intArray[0], intArray[1]);
             ////business end
-            System.out.println("再来一遍");
+            System.out.println("再来一遍, 请在键盘上输入两个整数, 用英文逗号隔开~~:");
 
         }
         scanner.close();
