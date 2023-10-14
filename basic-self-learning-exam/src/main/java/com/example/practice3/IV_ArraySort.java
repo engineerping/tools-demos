@@ -5,9 +5,9 @@ package com.example.practice3;
 public class IV_ArraySort {
     /**
      * 冒泡排序的思想是:
-     * 两两比较相邻元素,如果顺序错误就交换位置
-     * 一轮下来,最大的一个元素就会沉到最后的位置
-     * 重复执行,直到排序完成
+     * 1.两两比较相邻元素,如果顺序错误就交换位置
+     * 2.一轮下来,最大的一个元素就会沉到最后的位置
+     * 3.重复执行,直到排序完成
      * 时间复杂度 O(n^2),空间复杂度 O(1)。
      */
     public static void bubbleSort(int[] intArray) {
