@@ -70,6 +70,7 @@
         <module>interview-questions</module>
         <module>basic-http-server-demo</module>
         <module>basic-self-learning-exam</module>
+        <module>basic-extends-clone-prototype</module>
 
     </modules>
     <build>
