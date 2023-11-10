@@ -71,6 +71,7 @@
         <module>basic-http-server-demo</module>
         <module>basic-self-learning-exam</module>
         <module>basic-extends-clone-prototype</module>
+        <module>basic-hadoop-map-reduce</module>
 
     </modules>
     <build>
@@ -90,5 +91,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
