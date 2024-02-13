@@ -64,6 +64,7 @@
         <module>basic-java8-util-stream-test</module>
         <module>basic-java-io-stream-test</module>
         <module>basic-multi-thread</module>
+        <module>basic-reactive-programming-demo</module>
         <module>spring-jdk-cglib-proxy-test</module>
         <module>spring-RestControllerAdvice</module>
         <module>basic-serializable-test</module>
