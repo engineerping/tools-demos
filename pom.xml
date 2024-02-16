@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>demos</artifactId>
+    <artifactId>tools-demos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
@@ -69,6 +69,7 @@
         <module>spring-RestControllerAdvice</module>
         <module>basic-serializable-test</module>
         <module>interview-questions</module>
+        <module>spring-all-design-pattern</module>
         <module>basic-http-server-demo</module>
         <module>basic-self-learning-exam</module>
         <module>basic-extends-clone-prototype</module>
