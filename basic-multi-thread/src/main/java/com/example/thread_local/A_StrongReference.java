@@ -19,9 +19,13 @@ public class A_StrongReference {
         Thread.sleep(500);
         System.out.println("m = " + m); //强引用不会被回收
 
+        m = null; // 然后 m 有机会被 GC 回收
+        TimeUnit.SECONDS.sleep(1);
+
         ////
         //分配一个占 10M 内存的Byte数组
-        Byte[] byteArray10M = new Byte[1024 * 1024 * 2];
+        // 同时 JVM 自己会一直占据 heap 4M ~ 5M 内存
+        Byte[] byteArray10M = new Byte[1024 * 1024 * 12];
 
         //再分配一个占 12M 内存的Byte数组, heap 将装不下,此时 JVM 会先 GC 一次, 发现不够
         //由于 java -Xmx20M 所以,堆空间不够,所以会抛出 OutOfMemoryError 异常
@@ -34,7 +38,7 @@ public class A_StrongReference {
 //        System.gc(); //没有强引用指向它了,会被回收
 //        Thread.sleep(500);
 //        System.out.println("m = " + m); //如果打印 null 说明堆内存中的 m 对象已经被回收了.
-        TimeUnit.MINUTES.sleep(60); // 使用 visualvm 等监测工具时,防止程序退出
+        TimeUnit.MINUTES.sleep(1); // 使用 visualvm 等监测工具时,防止程序退出
     }
 
 }

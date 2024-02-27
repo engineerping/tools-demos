@@ -14,23 +14,23 @@ import java.util.concurrent.TimeUnit;
  */
 public class B_SoftReference {
     public static void main(String[] args) throws InterruptedException {
-        //千万注意 sr 是"强引用"指向堆中的softReference()对象. new关键字直接 new 出来的对象都是 "强引用"
-        //其中的弱引用是指 "SoftReference#referent变量" 指向 "new byte[1024 * 1024 *10](这是一个占 10M内存的 Byte数组)", 这个 绑定关系 是弱引用
-        //SoftReference是一种特殊的对象, 其中的范型规定了"SoftReference#referent变量" 通过软绑定 所指向的对象类型
+        //千万注意 sr 是"强引用"指向堆中的softReference()对象. new关键字直接 new 出来的对象都是 "强引用".
+        // *SoftReference 类的意思是说 SoftReference 的 Constructor 参数赋值给SoftReference的成员变量,该成员变量指向堆内对象是弱引用(jdk注释写的很清楚)*
+        //换句话说,软引用是指 SoftReference 的对象内部 "SoftReference#referent变量" 指向 "new byte[1024 * 1024 *10](这是一个占 10M内存的 Byte数组对象)", 这个 指向关系 是弱引用
         SoftReference<byte[]> sr = new SoftReference(new byte[1024 * 1024 *10]); //千万注意 sr 是"强引用"指向堆中的softReference()对象.
 
         ////
-        System.out.println(sr.get()); //获取那个 10M 的Byte数组, 并打印
+        System.out.println("sr = " + sr.get()); //获取那个 10M 的Byte数组, 并打印
         System.gc();
-        Thread.sleep(500);
-        System.out.println(sr.get());// 软引用在堆内存空间足够时,就不会被回收.
+        Thread.sleep(1000);
+        System.out.println("sr = " +sr.get());// 软引用在堆内存空间足够时,就不会被回收.
 
         ////
         //再分配一个占 12M 内存的Byte数组, heap 将装不下,此时 JVM 会先 GC 一次, 发现不够,会把软引用指向的对象回收掉
         //由于 java -Xmx20M 所以,堆空间不够,就会回收掉 SoftReference#referent 软 引用指向的对象
-        Byte[] byteArray = new Byte[1024 * 1024 *2];
-        Thread.sleep(500);
-        System.out.println(sr.get()); //此时就 弱引用的对象就被回收了, 所以 sr.get()返回 null
+        Byte[] byteArray = new Byte[1024 * 1024 *5];
+        Thread.sleep(1000);
+        System.out.println("sr = " +sr.get()); //此时就 弱引用的对象就被回收了, 所以 sr.get()返回 null
 
         ////
         //总结:
