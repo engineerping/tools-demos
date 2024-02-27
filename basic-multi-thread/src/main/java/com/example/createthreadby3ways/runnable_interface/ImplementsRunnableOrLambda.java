@@ -1,4 +1,4 @@
-package com.example.createthreadby3ways.runnable;
+package com.example.createthreadby3ways.runnable_interface;
 
 public class ImplementsRunnableOrLambda {
     public static void main(String[] args) {

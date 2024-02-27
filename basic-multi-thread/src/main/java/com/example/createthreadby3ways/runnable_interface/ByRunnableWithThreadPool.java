@@ -1,4 +1,6 @@
-package com.example.createthreadby3ways.runnable;
+package com.example.createthreadby3ways.runnable_interface;
+
+import com.example.SleepHelper;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -13,11 +15,7 @@ public class ByRunnableWithThreadPool {
         executorService.execute(new Runnable() {
             @Override
             public void run() {
-                try {
-                    sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+                SleepHelper.sleepSecond(1);
                 System.out.println("Using thread pool to create thread_t_1");
                 //new ArrayList<>(0).get(1); // mocking throw index out of bound exception
             }
@@ -28,6 +26,10 @@ public class ByRunnableWithThreadPool {
                 System.out.println("Using thread pool to create thread_t_2");
             }
         );
+
+        executorService.submit(() -> {
+            System.out.println("Using thread pool to create thread_t_3");
+        });
 
         executorService.shutdown(); //线程池用完后要shutdown
     }

@@ -1,4 +1,4 @@
-package com.example.createthreadby3ways.callable;
+package com.example.createthreadby3ways.callable_interface;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -6,9 +6,10 @@ import java.util.concurrent.FutureTask;
 
 import static java.lang.Thread.sleep;
 
-public class ImplementsCallableOeLambda {
+public class ImplementsCallableOrLambda {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
+        // FutureTask 实现了 Runnable 接口, 可以调用其 run() 方法
         FutureTask<Boolean> futureTaskBoolean_1 = new FutureTask<>(new Callable<Boolean>() {
             @Override
             public Boolean call() throws Exception {

@@ -1,4 +1,4 @@
-package com.example.createthreadby3ways.callable;
+package com.example.createthreadby3ways.callable_interface;
 
 import java.util.concurrent.*;
 
