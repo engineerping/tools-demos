@@ -12,8 +12,8 @@ public class ImplementsCallableOrLambda {
         // FutureTask 实现了 Runnable 接口, 可以调用其 run() 方法
         FutureTask<Boolean> futureTaskBoolean_1 = new FutureTask<>(new Callable<Boolean>() {
             @Override
-            public Boolean call() throws Exception {
-                sleep(1000);
+            public Boolean call() throws Exception { //call() 方法: 1.可以声明抛出异常; 2.可以有返回值
+                sleep(500);
                 System.out.println("Implement Callable to create thread ");
                 //new ArrayList<>(0).get(1); // mocking throw index out of bound exception
                 return Boolean.TRUE;
