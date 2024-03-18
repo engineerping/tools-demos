@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>spring-all-design-pattern</artifactId>
+    <artifactId>spring-design-pattern</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <description>Demo project for Spring Boot</description>
