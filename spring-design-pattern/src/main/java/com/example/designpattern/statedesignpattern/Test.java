@@ -1,4 +1,4 @@
-package com.example.designpattern.statepattern;
+package com.example.designpattern.statedesignpattern;
 
 /**
  * @author gongchengship@163.com
