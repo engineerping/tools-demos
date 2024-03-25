@@ -29,8 +29,6 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * 直到当前线程使数据并释放读锁之后，线程T才能获取写锁进行数据更新。
  *
  *
- * //////
- * 动画演示: https://www.bilibili.com/video/BV1z44y1X7BJ/?spm_id_from=333.337.search-card.all.click&vd_source=296138b5b3cfb93c548e36d81436eceb
  *
  * //////这个人应该是讲的最好的了，应该比马士兵哪些讲师讲的好很多
  * https://www.bilibili.com/video/BV1Lf4y1F7W3/?spm_id_from=333.999.0.0&vd_source=5e872d5d13e1cf66935ed4c15f974c01
