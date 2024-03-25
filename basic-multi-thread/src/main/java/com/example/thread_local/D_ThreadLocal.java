@@ -1,6 +1,5 @@
 package com.example.thread_local;
 
-import com.example.Person;
 import com.example.SleepHelper;
 
 /**
