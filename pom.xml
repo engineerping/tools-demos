@@ -68,7 +68,7 @@
         <module>spring-jdk-cglib-proxy-test</module>
         <module>spring-RestControllerAdvice</module>
         <module>basic-serializable-test</module>
-        <module>interview-questions</module>
+        <module>basic-interview-questions</module>
         <module>spring-design-pattern</module>
         <module>basic-http-server-demo</module>
         <module>basic-self-learning-exam</module>
@@ -76,6 +76,7 @@
         <module>basic-hadoop-map-reduce</module>
         <module>spring-bean-life-circle</module>
         <module>spring-tiny-knowledge-summary</module>
+        <module>spring-interview-questions</module>
 
     </modules>
     <build>
