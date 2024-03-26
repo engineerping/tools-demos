@@ -74,6 +74,8 @@
         <module>basic-self-learning-exam</module>
         <module>basic-extends-clone-prototype</module>
         <module>basic-hadoop-map-reduce</module>
+        <module>spring-bean-life-circle</module>
+        <module>spring-tiny-knowledge-summary</module>
 
     </modules>
     <build>
