@@ -69,7 +69,7 @@
         <module>spring-RestControllerAdvice</module>
         <module>basic-serializable-test</module>
         <module>basic-interview-questions</module>
-        <module>spring-design-pattern</module>
+        <module>spring-the-23-design-pattern</module>
         <module>basic-http-server-demo</module>
         <module>basic-self-learning-exam</module>
         <module>basic-extends-clone-prototype</module>
