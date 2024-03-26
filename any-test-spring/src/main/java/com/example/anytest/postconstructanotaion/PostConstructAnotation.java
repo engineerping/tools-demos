@@ -39,7 +39,8 @@ public class PostConstructAnotation {
     }
 
     /**
-     * //用main 方法调用，是不会触发@PostConstructor的。它只在servlet 容器中有效
+     * 用main 方法调用，是不会触发@PostConstructor的。它只在servlet 容器中有效
+     * 尽管 @PostConstruct 来自于javax.annotation.PostConstruct
      * @param args
      */
 //    public static void main(String[] args) {

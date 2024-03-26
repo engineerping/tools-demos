@@ -2,8 +2,6 @@ package com.example.threadbase.interruptted;
 
 import com.example.SleepHelper;
 
-import static java.lang.Thread.sleep;
-
  /**
  * <p>TIPS: Character set of current file is "UTF-8",just in case of Chinese characters displays in garbled</p>
  * 描述:
