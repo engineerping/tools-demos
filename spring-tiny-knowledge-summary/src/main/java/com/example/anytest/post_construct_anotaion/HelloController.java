@@ -1,4 +1,4 @@
-package com.example.anytest.postconstructanotaion;
+package com.example.anytest.post_construct_anotaion;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
