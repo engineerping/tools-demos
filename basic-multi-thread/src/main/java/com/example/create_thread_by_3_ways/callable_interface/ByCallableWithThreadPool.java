@@ -31,7 +31,7 @@ public class ByCallableWithThreadPool {
             @Override
             public Boolean call() throws Exception {
                 sleep(1000);
-                //new ArrayList<>(0).get(1); // mocking throw index out of bound exception
+                //new ArrayList<>(1).get(2); // mocking throw index out of bound exception
                 System.out.println("Callable is creating thread_3");
                 return Boolean.TRUE;
             }

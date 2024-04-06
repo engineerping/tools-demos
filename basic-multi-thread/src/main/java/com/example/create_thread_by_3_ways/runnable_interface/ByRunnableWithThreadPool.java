@@ -18,8 +18,8 @@ public class ByRunnableWithThreadPool {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
+                //new ArrayList<>(1).get(2); // mocking throw index out of bound exception
                 System.out.println("Using thread pool to create thread_t_1");
-                //new ArrayList<>(0).get(1); // mocking throw index out of bound exception
             }
         });
 
