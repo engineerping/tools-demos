@@ -1,4 +1,4 @@
-package com.example.multithread.threadpool;
+package com.example.multithread;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
@@ -11,7 +11,8 @@ public class FutureTaskDemo {
             return 1000;
         });
 
-        new Thread(task).start(); //因为FutureTask 实现了Runable接口
+        //因为FutureTask 实现了Runable接口,所以可以作为 Thread 的target,即构造函数参数
+        new Thread(task).start();
         System.out.println("Before get");
         System.out.println(task.get());
         System.out.println("After get");

@@ -1,4 +1,4 @@
-package com.example.multithread.threadpool;
+package com.example.thread_pool_test;
 
 /**
  * For learn how to customize a thread pool

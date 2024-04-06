@@ -1,4 +1,4 @@
-package com.example.multithread.threadpool;
+package com.example.thread_pool_test;
 
 import java.util.HashMap;
 import java.util.Map;
