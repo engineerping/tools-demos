@@ -11,7 +11,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class ThreadLoopingInOrder {
     private static final int PRINT_COUNT = 8; // 题目设置打印 ABCABCAB, 故这里循环次数定为 8
-    private static Lock reentrantLock = new ReentrantLock();
+    private static Lock reentrantLock = new ReentrantLock(); //在 try 块之前 初始化 reentrantLock
     private static Condition conditionA = reentrantLock.newCondition();
     private static Condition conditionB = reentrantLock.newCondition();
     private static Condition conditionC = reentrantLock.newCondition();
@@ -39,7 +39,7 @@ public class ThreadLoopingInOrder {
         public void run() {
             for (int i = 0; i < PRINT_COUNT; i++) {
                 try {
-                    reentrantLock.lock(); //加锁, 然后只有某一个线程能持有锁可以执行下面的代码 ------ 锁被释放后,会有其他线程抢占到锁,然后执行 这一步获取锁的 代码.
+                    reentrantLock.lock(); //在 try 块内应用reentrantLook 加锁, 然后只有某一个线程能持有锁可以执行下面的代码 ------ 锁被释放后,会有其他线程抢占到锁,然后执行 这一步获取锁的 代码.
                     while (state % 3 != threadState) { // state 初始为 0, 就意味着 如果 持有锁的线程的 threadState 不为 0 (假设 threadState 为 2),则程序走入该 while 循环体,条件不满足, 则 一直循环 等待自己的打印状态
                         if (printChar == 'A') {
                             conditionA.await();
@@ -64,7 +64,7 @@ public class ThreadLoopingInOrder {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
-                    reentrantLock.unlock(); //释放锁
+                    reentrantLock.unlock(); //在 finally 块中释放 reentrantLock
                 }
             }
         }
