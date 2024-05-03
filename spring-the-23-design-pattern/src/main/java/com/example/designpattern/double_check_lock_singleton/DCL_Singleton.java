@@ -2,6 +2,10 @@ package com.example.designpattern.double_check_lock_singleton;
 
 /**
  * @author gongchengship@163.com
+ * 双重检查锁单例的好处:
+ * 1. 多线依然可以保证单例
+ * 2. 性能无损失
+ * 3. 懒汉模式
  *
  * ref: https://hyrepo.com/tech/double-check-lock/
  */
